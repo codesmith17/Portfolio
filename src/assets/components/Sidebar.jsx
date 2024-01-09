@@ -7,6 +7,7 @@ import myAvatarImage from "../../assets/images/my-avatar.png";
 import { FaWhatsapp } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { SiLetterboxd } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 const Sidebar = () => {
   return (
     <aside class="sidebar" data-sidebar>
@@ -131,7 +132,16 @@ const Sidebar = () => {
             >
               <FaInstagram />
             </a>
-          </li>{" "}
+          </li>
+          <li class="social-item">
+            <a
+              href="https://github.com/codesmith17"
+              target="_blank"
+              class="social-link"
+            >
+              <FaGithub />
+            </a>
+          </li>
           <li class="social-item">
             <a
               href="https://www.linkedin.com/in/krishna-tripathi-483477255/"
