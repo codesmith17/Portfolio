@@ -12,7 +12,7 @@ const Sidebar = () => {
   return (
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
-        <figure class="avatar-box">
+        <figure class="avatar-box" style={{ borderRadius: "50%" }}>
           <img src={myAvatarImage} alt="Krishna Tripathi" width="80" />
         </figure>
 

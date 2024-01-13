@@ -15,6 +15,10 @@ import mysql from "../../assets/images/mysql (2).svg";
 import react from "../../assets/images/react.svg";
 import express from "../../assets/images/express (2).svg";
 import java from "../../assets/images/java-icon.svg";
+import php from "../../assets/images/php.svg";
+import instyle from "../../assets/images/instyle.png";
+import give_hope from "../../assets/images/give_hope.png";
+import rashmi from "../../assets/images/rashmi.png";
 const Article1 = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -29,16 +33,17 @@ const Article1 = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <>
-      <article class="about  active" data-page="about">
+      <article className="about  active" data-page="about">
         <header>
-          <h2 class="h2 article-title typing-text " id="text-container">
+          <h2 className="h2 article-title typing-text " id="text-container">
             About me
           </h2>
         </header>
 
-        <section class="about-text ">
+        <section className="about-text ">
           <p>
             I'm Krishna Tripathi from Indian Institute of Information Technology
             Nagpur, a PreFinal (3rd year) with great interest in web development
@@ -58,12 +63,12 @@ const Article1 = () => {
 
         {/* service */}
 
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
+        <section className="service">
+          <h3 className="h3 service-title">What i'm doing</h3>
 
-          <ul class="service-list">
-            {/* <li class="service-item">
-              <div class="service-icon-box">
+          <ul className="service-list">
+            {/* <li className="service-item">
+              <div className="service-icon-box">
                 <img
                   src="../../assets/components/images/my-avatar.png"
                   alt="design icon"
@@ -71,10 +76,10 @@ const Article1 = () => {
                 />
               </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">Web design</h4>
 
-                <p class="service-item-text">
+                <p className="service-item-text">
                   The most modern and high-quality design made at a professional
                   level.
                 </p>
@@ -90,7 +95,8 @@ const Article1 = () => {
                 <h4 className="h4 service-item-title">Web development</h4>
 
                 <p className="service-item-text">
-                  High-quality development of sites at the professional level.
+                  High-quality development of sites at the professional level. A
+                  Professional MERN stack developer, with expertise in React.js.
                 </p>
                 <div
                   className="slider-container"
@@ -98,10 +104,29 @@ const Article1 = () => {
                     marginTop: "auto auto",
                     overflowX: "auto",
                     display: "flex",
-                    flexDirection: "row-reverse",
+                    flexDirection: "row",
                     maxWidth: "100%",
                   }}
                 >
+                  {" "}
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={express}
+                    alt="express GIF"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={react}
+                    alt="react GIF"
+                  />
                   <img
                     style={{
                       flex: "0 0 auto",
@@ -147,42 +172,29 @@ const Article1 = () => {
                     src={mongodb}
                     alt="mongodb GIF"
                   />
-                  <img
-                    style={{
-                      flex: "0 0 auto",
-                      width: "24%",
-                      margin: "10px",
-                    }}
-                    src={react}
-                    alt="react GIF"
-                  />
-                  <img
-                    style={{
-                      flex: "0 0 auto",
-                      width: "24%",
-                      margin: "10px",
-                    }}
-                    src={express}
-                    alt="express GIF"
-                  />
                 </div>
               </div>
             </li>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src={leet} alt="leetcode icon" width="40" />
+            <li className="service-item">
+              <div className="service-icon-box">
+                <a
+                  target="_blank"
+                  href="https://www.leetcode.com/krishna170902"
+                >
+                  <img src={leet} alt="leetcode icon" width="40" />
+                </a>
               </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Leetcode</h4>
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">Leetcode</h4>
                 <p
                   className="service-item-text"
                   style={{ fontSize: "13px", lineHeight: "1.5" }}
                 >
                   With super keen interest in data structures and algorithms and
                   having been actively participating in LeetCode for the past
-                  1.5 years, my current LeetCode rating is 1884 with a Knight
+                  1.5 years, my current LeetCode rating is 1950 with a Knight
                   ranking.
                 </p>{" "}
                 <div
@@ -243,16 +255,34 @@ const Article1 = () => {
                 </div>
               </div>
             </li>
+            <li className="service-item">
+              <div className="service-icon-box">
+                <img src={php} alt="leetcode icon" width="80" />
+              </div>
 
-            <li class="service-item">
-              <div class="service-icon-box">
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">Leetcode</h4>
+                <p
+                  className="service-item-text"
+                  style={{ fontSize: "13px", lineHeight: "1.5" }}
+                >
+                  With almost one year of experience in PHP and database
+                  programming, struggling throught mistakes and lot of work
+                  hours spent here, hence made couple of minor and some major
+                  PHP,MYSQL projects.
+                </p>
+              </div>
+            </li>
+
+            <li className="service-item">
+              <div className="service-icon-box">
                 <img src={java} alt="java icon" width="60" />
               </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Java Development</h4>
+              <div className="service-content-box">
+                <h4 className="h4 service-item-title">Java Development</h4>
 
-                <p class="service-item-text">
+                <p className="service-item-text">
                   I am deeply passionate about developing and designing
                   large-scale Java-based desktop applications.
                 </p>
@@ -263,41 +293,37 @@ const Article1 = () => {
 
         {/* <!--- testimonials--> */}
 
-        <section class="testimonials">
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+        <section className="testimonials">
+          <h3 className="h3 testimonials-title">Testimonials</h3>
 
-          <ul class="testimonials-list has-scrollbar">
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
+          <ul className="testimonials-list has-scrollbar">
+            <li className="testimonials-item">
+              <div className="content-card" data-testimonials-item>
+                <figure className="testimonials-avatar-box">
                   <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
+                    src={rashmi}
+                    alt="Rashmi"
                     width="60"
                     data-testimonials-avatar
                   />
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
-                  Daniel lewis
+                <h4
+                  className="h4 testimonials-item-title"
+                  data-testimonials-title
+                >
+                  Rashmi Mantri
                 </h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
+                <div className="testimonials-text" data-testimonials-text>
+                  <p></p>
                 </div>
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
+            <li className="testimonials-item">
+              <div className="content-card" data-testimonials-item>
+                <figure className="testimonials-avatar-box">
                   <img
                     src="./assets/images/avatar-2.png"
                     alt="Jessica miller"
@@ -306,11 +332,14 @@ const Article1 = () => {
                   />
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                <h4
+                  className="h4 testimonials-item-title"
+                  data-testimonials-title
+                >
                   Jessica miller
                 </h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div className="testimonials-text" data-testimonials-text>
                   <p>
                     Richard was hired to create a corporate identity. We were
                     very pleased with the work done. She has a lot of experience
@@ -323,9 +352,9 @@ const Article1 = () => {
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
+            <li className="testimonials-item">
+              <div className="content-card" data-testimonials-item>
+                <figure className="testimonials-avatar-box">
                   <img
                     src="./assets/images/avatar-3.png"
                     alt="Emily evans"
@@ -334,11 +363,14 @@ const Article1 = () => {
                   />
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                <h4
+                  className="h4 testimonials-item-title"
+                  data-testimonials-title
+                >
                   Emily evans
                 </h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div className="testimonials-text" data-testimonials-text>
                   <p>
                     Richard was hired to create a corporate identity. We were
                     very pleased with the work done. She has a lot of experience
@@ -351,9 +383,9 @@ const Article1 = () => {
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
+            <li className="testimonials-item">
+              <div className="content-card" data-testimonials-item>
+                <figure className="testimonials-avatar-box">
                   <img
                     src="./assets/images/avatar-4.png"
                     alt="Henry william"
@@ -362,11 +394,14 @@ const Article1 = () => {
                   />
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                <h4
+                  className="h4 testimonials-item-title"
+                  data-testimonials-title
+                >
                   Henry william
                 </h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div className="testimonials-text" data-testimonials-text>
                   <p>
                     Richard was hired to create a corporate identity. We were
                     very pleased with the work done. She has a lot of experience
@@ -383,16 +418,16 @@ const Article1 = () => {
 
         {/* <!--- testimonials modal--> */}
 
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
+        <div className="modal-container" data-modal-container>
+          <div className="overlay" data-overlay></div>
 
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
+          <section className="testimonials-modal">
+            <button className="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
 
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
+            <div className="modal-img-wrapper">
+              <figure className="modal-avatar-box">
                 <img
                   src="./assets/images/avatar-1.png"
                   alt="Daniel lewis"
@@ -400,12 +435,10 @@ const Article1 = () => {
                   data-modal-img
                 />
               </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
             </div>
 
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>
+            <div className="modal-content">
+              <h4 className="h3 modal-title" data-modal-title>
                 Daniel lewis
               </h4>
 
@@ -427,43 +460,19 @@ const Article1 = () => {
 
         {/* clients */}
 
-        <section class="clients">
-          <h3 class="h3 clients-title">Clients</h3>
+        <section className="clients">
+          <h3 className="h3 clients-title">Clients</h3>
 
-          <ul class="clients-list has-scrollbar">
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo" />
+          <ul className="clients-list has-scrollbar">
+            <li className="clients-item">
+              <a href="https://instyle-interiors.vercel.app/#">
+                <img src={instyle} alt="client logo" width={"50%"} />
               </a>
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo" />
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo" />
+            <li className="clients-item">
+              <a href="https://www.givehopef.org/">
+                <img src={give_hope} alt="client logo" />
               </a>
             </li>
           </ul>

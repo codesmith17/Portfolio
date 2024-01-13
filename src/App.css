@@ -268,7 +268,7 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 50%;
 }
 
 .info-content .name {
@@ -694,7 +694,7 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  width: 70%;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
@@ -1748,25 +1748,13 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
+.info-content span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
 }
 
-
-/* Apply the typing animation to the text */
-
-.typing-text {
-  overflow: hidden;
-  /* Hide overflow to create the typing effect */
-  border-right: 2px solid #000;
-  /* Simulate cursor */
-  white-space: nowrap;
-  /* Prevent text from wrapping */
-  animation: typing 2s steps(40, end) infinite;
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
