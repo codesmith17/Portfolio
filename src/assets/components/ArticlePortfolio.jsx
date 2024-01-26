@@ -1,4 +1,12 @@
 import React from "react";
+import todo from "../../assets/images/todo-project.jpg";
+import agnihotra from "../../assets/images/agnihotra.png";
+import givehope from "../../assets/images/givehope.png";
+import instyle from "../../assets/images/instyle-int.png";
+import codeforces from "../../assets/images/codeforces.png.png";
+import { FaRegEye } from "react-icons/fa";
+import codechef from "../../assets/images/codechef.jpg";
+import leetcode from "../../assets/images/leetcode.png";
 
 const ArticlePortfolio = () => {
   return (
@@ -14,17 +22,17 @@ const ArticlePortfolio = () => {
               All
             </button>
           </li>
-
           <li class="filter-item">
-            <button data-filter-btn>Web design</button>
+            <button data-filter-btn>PHP</button>
           </li>
-
           <li class="filter-item">
             <button data-filter-btn>Applications</button>
           </li>
-
           <li class="filter-item">
             <button data-filter-btn>Web development</button>
+          </li>
+          <li class="filter-item">
+            <button data-filter-btn>Competetive Programming and DSA</button>
           </li>
         </ul>
 
@@ -45,15 +53,18 @@ const ArticlePortfolio = () => {
             </li>
 
             <li class="select-item">
-              <button data-select-item>Web design</button>
+              <button data-select-item>PHP</button>
             </li>
 
             <li class="select-item">
-              <button data-select-item>Applications</button>
+              <button data-select-item>Application</button>
             </li>
 
             <li class="select-item">
               <button data-select-item>Web development</button>
+            </li>
+            <li class="select-item">
+              <button data-select-item>Competetive Programming and DSA</button>
             </li>
           </ul>
         </div>
@@ -64,20 +75,21 @@ const ArticlePortfolio = () => {
             data-filter-item
             data-category="web development"
           >
-            <a href="#">
+            <a
+              href="https://github.com/codesmith17/ADVANCED-TODO-LIST"
+              target="_blank"
+            >
               <figure class="project-img">
                 <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
+                  <FaRegEye />
                 </div>
 
-                <img
-                  src="./assets/images/project-1.jpg"
-                  alt="finance"
-                  loading="lazy"
-                />
+                <img src={todo} alt="todo" loading="lazy" />
               </figure>
 
-              <h3 class="project-title">Finance</h3>
+              <h3 class="project-title">
+                An ADVANCED TODO APP WITH LOCAL STORAGE
+              </h3>
 
               <p class="project-category">Web development</p>
             </a>
@@ -88,46 +100,20 @@ const ArticlePortfolio = () => {
             data-filter-item
             data-category="web development"
           >
-            <a href="#">
+            <a href="https://www.givehopef.org/" target="_blank">
               <figure class="project-img">
                 <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
+                  <FaRegEye />
                 </div>
 
-                <img
-                  src="./assets/images/project-2.png"
-                  alt="orizon"
-                  loading="lazy"
-                />
+                <img src={givehope} alt="orizon" loading="lazy" />
               </figure>
 
-              <h3 class="project-title">Orizon</h3>
+              <h3 class="project-title">
+                A website for a NGO namely GiveHope foundation
+              </h3>
 
               <p class="project-category">Web development</p>
-            </a>
-          </li>
-
-          <li
-            class="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img
-                  src="./assets/images/project-3.jpg"
-                  alt="fundo"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 class="project-title">Fundo</h3>
-
-              <p class="project-category">Web design</p>
             </a>
           </li>
 
@@ -139,7 +125,7 @@ const ArticlePortfolio = () => {
             <a href="#">
               <figure class="project-img">
                 <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
+                  <FaRegEye />
                 </div>
 
                 <img
@@ -151,55 +137,27 @@ const ArticlePortfolio = () => {
 
               <h3 class="project-title">Brawlhalla</h3>
 
-              <p class="project-category">Applications</p>
+              <p class="project-category">Application</p>
             </a>
           </li>
 
-          <li
-            class="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
+          <li class="project-item  active" data-filter-item data-category="php">
+            <a href="https://github.com/codesmith17/RAILMAARG" target="_blank">
               <figure class="project-img">
                 <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
+                  <FaRegEye />
                 </div>
 
                 <img
-                  src="./assets/images/project-5.png"
+                  src="https://raw.githubusercontent.com/codesmith17/RAILMAARG/master/images/logo.jpg"
                   alt="dsm."
                   loading="lazy"
                 />
               </figure>
 
-              <h3 class="project-title">DSM.</h3>
+              <h3 class="project-title">RAILMAARG (IRCTC CLONE)</h3>
 
-              <p class="project-category">Web design</p>
-            </a>
-          </li>
-
-          <li
-            class="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img
-                  src="./assets/images/project-6.png"
-                  alt="metaspark"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 class="project-title">MetaSpark</h3>
-
-              <p class="project-category">Web design</p>
+              <p class="project-category">PHP</p>
             </a>
           </li>
 
@@ -208,46 +166,21 @@ const ArticlePortfolio = () => {
             data-filter-item
             data-category="web development"
           >
-            <a href="#">
+            <a
+              href="https://agnihotra-eternal-agni.vercel.app/"
+              target="_blank"
+            >
               <figure class="project-img">
                 <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
+                  <FaRegEye />
                 </div>
 
-                <img
-                  src="./assets/images/project-7.png"
-                  alt="summary"
-                  loading="lazy"
-                />
+                <img src={agnihotra} alt="summary" loading="lazy" />
               </figure>
 
-              <h3 class="project-title">Summary</h3>
+              <h3 class="project-title">Agnihotra Countdown Timer</h3>
 
-              <p class="project-category">Web development</p>
-            </a>
-          </li>
-
-          <li
-            class="project-item  active"
-            data-filter-item
-            data-category="applications"
-          >
-            <a href="#">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img
-                  src="./assets/images/project-8.jpg"
-                  alt="task manager"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 class="project-title">Task Manager</h3>
-
-              <p class="project-category">Applications</p>
+              <p class="project-category">Web Development</p>
             </a>
           </li>
 
@@ -256,22 +189,81 @@ const ArticlePortfolio = () => {
             data-filter-item
             data-category="web development"
           >
-            <a href="#">
+            <a href="https://instyle-interiors.vercel.app/#">
               <figure class="project-img">
                 <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
+                  <FaRegEye />
                 </div>
 
-                <img
-                  src="./assets/images/project-9.png"
-                  alt="arrival"
-                  loading="lazy"
-                />
+                <img src={instyle} alt="arrival" loading="lazy" />
               </figure>
 
-              <h3 class="project-title">Arrival</h3>
+              <h3 class="project-title">Instyle Interiors</h3>
 
               <p class="project-category">Web development</p>
+            </a>
+          </li>
+          <li
+            class="project-item  active"
+            data-filter-item
+            data-category="competetive programming and dsa"
+          >
+            <a
+              href="https://codeforces.com/profile/ukKrishna27081709"
+              target="_blank"
+            >
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <FaRegEye />
+                </div>
+
+                <img src={codeforces} alt="arrival" loading="lazy" />
+              </figure>
+
+              <h3 class="project-title">Codeforces</h3>
+
+              <p class="project-category">Competetive Programming and DSA</p>
+            </a>
+          </li>
+          <li
+            class="project-item  active"
+            data-filter-item
+            data-category="competetive programming and dsa"
+          >
+            <a
+              href="https://www.codechef.com/users/krishna1727"
+              target="_blank"
+            >
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <FaRegEye />
+                </div>
+
+                <img src={codechef} alt="arrival" loading="lazy" />
+              </figure>
+
+              <h3 class="project-title">Codechef</h3>
+
+              <p class="project-category">Competetive Programming and DSA</p>
+            </a>
+          </li>
+          <li
+            class="project-item  active"
+            data-filter-item
+            data-category="competetive programming and dsa"
+          >
+            <a href="https://leetcode.com/krishna170902/" target="_blank">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <FaRegEye />
+                </div>
+
+                <img src={leetcode} alt="arrival" loading="lazy" />
+              </figure>
+
+              <h3 class="project-title">Leetcode</h3>
+
+              <p class="project-category">Competetive Programming and DSA</p>
             </a>
           </li>
         </ul>

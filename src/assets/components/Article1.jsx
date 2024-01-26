@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import webDev from "../../assets/images/icon-dev.svg";
 import leet from "../../assets/images/leetcode.svg";
-// const [leetcodeRating, setLeetcodeRating] = useState(null);
 import knight from "../../assets/images/Knight.gif";
 import dec from "../../assets/images/2023-11.gif";
 import nov from "../../assets/images/2023-12.gif";
@@ -16,6 +15,7 @@ import react from "../../assets/images/react.svg";
 import express from "../../assets/images/express (2).svg";
 import java from "../../assets/images/java-icon.svg";
 import php from "../../assets/images/php.svg";
+import ayush from "../../assets/images/ayush_kushwaha.png";
 import instyle from "../../assets/images/instyle.png";
 import give_hope from "../../assets/images/give_hope.png";
 import rashmi from "../../assets/images/rashmi.png";
@@ -316,7 +316,11 @@ const Article1 = () => {
                 </h4>
 
                 <div className="testimonials-text" data-testimonials-text>
-                  <p></p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugiat eligendi impedit reprehenderit omnis rerum ipsum
+                    asperiores eius perspiciatis nam veritatis!
+                  </p>
                 </div>
               </div>
             </li>
@@ -356,8 +360,8 @@ const Article1 = () => {
               <div className="content-card" data-testimonials-item>
                 <figure className="testimonials-avatar-box">
                   <img
-                    src="./assets/images/avatar-3.png"
-                    alt="Emily evans"
+                    src={ayush}
+                    alt="Ayush Kushwaha"
                     width="60"
                     data-testimonials-avatar
                   />
@@ -367,17 +371,13 @@ const Article1 = () => {
                   className="h4 testimonials-item-title"
                   data-testimonials-title
                 >
-                  Emily evans
+                  Ayush Kushwaha
                 </h4>
 
                 <div className="testimonials-text" data-testimonials-text>
                   <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
+                    Exceptional web developer; Transforms visions in to
+                    stunning, functional online realities.
                   </p>
                 </div>
               </div>
@@ -442,7 +442,7 @@ const Article1 = () => {
                 Daniel lewis
               </h4>
 
-              <time datetime="2021-06-14">14 June, 2021</time>
+              <time datetime="2021-06-14">27 January, 2024</time>
 
               <div data-modal-text>
                 <p>
