@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import webDev from "../../assets/images/icon-dev.svg";
 import { IoCloseOutline } from "react-icons/io5";
 import { FaWindowClose } from "react-icons/fa";
-
+import aditya from "../../assets/images/aditya.jpg";
 import leet from "../../assets/images/leetcode.svg";
 import knight from "../../assets/images/Knight.gif";
 import dec from "../../assets/images/2023-11.gif";
@@ -581,7 +581,7 @@ const Article1 = () => {
               <div className="content-card" data-testimonials-item>
                 <figure className="testimonials-avatar-box">
                   <img
-                    src="./assets/images/avatar-4.png"
+                    src={aditya}
                     alt="Aditya Deshpande"
                     width="60"
                     data-testimonials-avatar
