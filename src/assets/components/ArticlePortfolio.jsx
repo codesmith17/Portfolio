@@ -9,6 +9,7 @@ import codechef from "../../assets/images/codechef.jpg";
 import leetcode from "../../assets/images/leetcode.png";
 import piano from "../../assets/images/piano.jpg";
 import errorlogs from "../../assets/images/errorlogs.png";
+import railmaarg from "../../assets/images/railmaarg.jpg";
 const ArticlePortfolio = () => {
   return (
     <article class="portfolio" data-page="portfolio">
@@ -172,11 +173,7 @@ const ArticlePortfolio = () => {
                   <FaRegEye />
                 </div>
 
-                <img
-                  src="https://raw.githubusercontent.com/codesmith17/RAILMAARG/master/images/logo.jpg"
-                  alt="dsm."
-                  loading="lazy"
-                />
+                <img src={railmaarg} alt="dsm." loading="lazy" />
               </figure>
 
               <h3 class="project-title">RAILMAARG (IRCTC CLONE)</h3>
