@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import webDev from "../../assets/images/icon-dev.svg";
 import { IoCloseOutline } from "react-icons/io5";
 import { FaWindowClose } from "react-icons/fa";
-import aditya from "../../assets/images/aditya.jpg";
+import aditya from "../../assets/images/aditya.png";
 import leet from "../../assets/images/leetcode.svg";
 import knight from "../../assets/images/Knight.gif";
 import dec from "../../assets/images/2023-11.gif";
