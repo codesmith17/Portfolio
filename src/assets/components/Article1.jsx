@@ -617,7 +617,7 @@ const Article1 = () => {
 
           <section className="testimonials-modal">
             <button className="modal-close-btn" data-modal-close-btn>
-              <FaWindowClose />
+              <IoCloseOutline />
             </button>
 
             <div className="modal-img-wrapper">
