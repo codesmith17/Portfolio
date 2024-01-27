@@ -7,7 +7,8 @@ import codeforces from "../../assets/images/codeforces.png.png";
 import { FaRegEye } from "react-icons/fa";
 import codechef from "../../assets/images/codechef.jpg";
 import leetcode from "../../assets/images/leetcode.png";
-
+import piano from "../../assets/images/piano.jpg";
+import errorlogs from "../../assets/images/errorlogs.png";
 const ArticlePortfolio = () => {
   return (
     <article class="portfolio" data-page="portfolio">
@@ -76,6 +77,30 @@ const ArticlePortfolio = () => {
             data-category="web development"
           >
             <a
+              href="https://github.com/codesmith17/ERROR_LOGS_DATABASE"
+              target="_blank"
+            >
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <FaRegEye />
+                </div>
+
+                <img src={errorlogs} alt="summary" loading="lazy" />
+              </figure>
+
+              <h3 class="project-title">
+                Error Logs Database using Web development and python
+              </h3>
+
+              <p class="project-category">Web Development</p>
+            </a>
+          </li>
+          <li
+            class="project-item  active"
+            data-filter-item
+            data-category="web development"
+          >
+            <a
               href="https://github.com/codesmith17/ADVANCED-TODO-LIST"
               target="_blank"
             >
@@ -122,20 +147,19 @@ const ArticlePortfolio = () => {
             data-filter-item
             data-category="applications"
           >
-            <a href="#">
+            <a
+              href="https://github.com/codesmith17/PianoXylophoneAndroid"
+              target="_blank"
+            >
               <figure class="project-img">
                 <div class="project-item-icon-box">
                   <FaRegEye />
                 </div>
 
-                <img
-                  src="./assets/images/project-4.png"
-                  alt="brawlhalla"
-                  loading="lazy"
-                />
+                <img src={piano} alt="brawlhalla" loading="lazy" />
               </figure>
 
-              <h3 class="project-title">Brawlhalla</h3>
+              <h3 class="project-title">Caravan - A musical instrument app</h3>
 
               <p class="project-category">Application</p>
             </a>
