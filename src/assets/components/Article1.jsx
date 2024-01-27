@@ -510,9 +510,10 @@ const Article1 = () => {
 
                 <div className="testimonials-text" data-testimonials-text>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugiat eligendi impedit reprehenderit omnis rerum ipsum
-                    asperiores eius perspiciatis nam veritatis!
+                    Krishna Tripathi is a web development maestro, excelling in
+                    competitive programming, DSA, and backend wizardry. Their
+                    expertise is unparalleled, making collaboration a seamless
+                    and enriching experience. Highly recommended!
                   </p>
                 </div>
               </div>
