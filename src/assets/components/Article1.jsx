@@ -387,7 +387,7 @@ const Article1 = () => {
                 >
                   With super keen interest in data structures and algorithms and
                   having been actively participating in LeetCode for the past
-                  1.5 years, my current LeetCode rating is 1950 with a Knight
+                  1.5 years, my current LeetCode rating is 2004 with a Knight
                   ranking.
                 </p>{" "}
                 <div
