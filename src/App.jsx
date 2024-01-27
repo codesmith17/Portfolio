@@ -7,9 +7,9 @@ import "./App.css";
 const App = () => {
   return (
     <main>
-      <Helmet>
+      {/* <Helmet>
         <script src="../script.js" type="text/javascript" />
-      </Helmet>
+      </Helmet> */}
       <Sidebar></Sidebar>
       <MainContent></MainContent>
     </main>
