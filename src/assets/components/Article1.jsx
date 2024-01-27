@@ -582,7 +582,7 @@ const Article1 = () => {
                 <figure className="testimonials-avatar-box">
                   <img
                     src="./assets/images/avatar-4.png"
-                    alt="Henry william"
+                    alt="Aditya Deshpande"
                     width="60"
                     data-testimonials-avatar
                   />
@@ -592,17 +592,15 @@ const Article1 = () => {
                   className="h4 testimonials-item-title"
                   data-testimonials-title
                 >
-                  Henry william
+                  Aditya Deshpande
                 </h4>
 
                 <div className="testimonials-text" data-testimonials-text>
                   <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
+                    Krishna Tripathi is a force of nature in web development
+                    with an extensive knowledge in Competitive Programming and
+                    DSA. His social and coding skills make working with him a
+                    magical experience.
                   </p>
                 </div>
               </div>
