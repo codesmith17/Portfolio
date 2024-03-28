@@ -519,7 +519,7 @@ const Article1 = () => {
               </div>
             </li>
 
-            <li className="testimonials-item">
+            {/* <li className="testimonials-item">
               <div className="content-card" data-testimonials-item>
                 <figure className="testimonials-avatar-box">
                   <img
@@ -548,7 +548,7 @@ const Article1 = () => {
                   </p>
                 </div>
               </div>
-            </li>
+            </li> */}
 
             <li className="testimonials-item">
               <div className="content-card" data-testimonials-item>
