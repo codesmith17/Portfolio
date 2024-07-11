@@ -216,7 +216,7 @@ const ArticlePortfolio = () => {
                 <div className="project-item-icon-box">
                   <FaRegEye />
                 </div>
-                <img src={todo} alt="Advanced Todo List" loading="lazy" />
+                <img src={agnihotra} alt="Advanced Todo List" loading="lazy" />
               </figure>
               <h3 className="project-title">Agnihotra Timing Website</h3>
               <p className="project-category">Web development</p>
