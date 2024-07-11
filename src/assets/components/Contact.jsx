@@ -24,8 +24,8 @@ const Contact = () => {
     // Instantiate the Brevo API client
     var defaultClient = SibApiV3Sdk.ApiClient.instance;
     var apiKey = defaultClient.authentications["api-key"];
-    // console.log(import.meta);
-    apiKey.apiKey = import.meta.env.VITE_REACT_APP_BREVO_API_KEY;
+    // console.log(import.meta;
+    apiKey.apiKey = import.meta.env.REACT_APP_BREVO_API_KEY;
 
     var apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
     var sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
@@ -102,31 +102,22 @@ const Contact = () => {
   };
 
   return (
-    <article className="contact" data-page="contact" style={styles.article}>
+    <article className="contact" data-page="contact">
       <header>
-        <h2 className="h2 article-title" style={styles.headerTitle}>
-          Contact
-        </h2>
+        <h2 className="h2 article-title">Contact</h2>
       </header>
 
-      <section className="mapbox" data-mapbox style={styles.mapbox}>
+      <section className="mapbox" data-mapbox>
         <figure>
           <Map />
         </figure>
       </section>
 
-      <section className="contact-form" style={styles.contactFormSection}>
-        <h3 className="h3 form-title" style={styles.formTitle}>
-          Contact Form
-        </h3>
+      <section className="contact-form">
+        <h3 className="h3 form-title">Contact Form</h3>
 
-        <form
-          onSubmit={handleSubmit}
-          className="form"
-          data-form
-          style={styles.form}
-        >
-          <div className="input-wrapper" style={styles.inputWrapper}>
+        <form onSubmit={handleSubmit} className="form" data-form>
+          <div className="input-wrapper">
             <input
               type="text"
               name="fullname"
@@ -136,7 +127,6 @@ const Contact = () => {
               placeholder="Full name"
               required
               data-form-input
-              style={styles.input}
             />
 
             <input
@@ -148,7 +138,6 @@ const Contact = () => {
               placeholder="Email address"
               required
               data-form-input
-              style={styles.input}
             />
           </div>
 
@@ -160,7 +149,6 @@ const Contact = () => {
             placeholder="Your Message"
             required
             data-form-input
-            style={{ ...styles.input, ...styles.textarea }}
           ></textarea>
 
           <button
@@ -170,7 +158,6 @@ const Contact = () => {
               !formData.fullname || !formData.email || !formData.message
             }
             data-form-btn
-            style={styles.button}
           >
             <FaPaperPlane />
             <span>Send Message</span>
@@ -181,101 +168,4 @@ const Contact = () => {
   );
 };
 
-const styles = {
-  article: {
-    maxWidth: "1000px",
-    margin: "0 auto",
-    padding: "40px 20px",
-    fontFamily: "'Poppins', sans-serif",
-    color: "#e0e0e0",
-    background: "linear-gradient(135deg, #2c3e50 0%, #1a2530 100%)",
-    borderRadius: "20px",
-    boxShadow: "0 10px 30px rgba(0,0,0,0.3)",
-  },
-  headerTitle: {
-    color: "#3498db",
-    marginBottom: "30px",
-    fontSize: "2.5rem",
-    fontWeight: "700",
-    textTransform: "uppercase",
-    letterSpacing: "2px",
-    textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
-  },
-  mapbox: {
-    marginBottom: "40px",
-    borderRadius: "15px",
-    overflow: "hidden",
-    boxShadow: "0 5px 15px rgba(0,0,0,0.3)",
-  },
-  contactFormSection: {
-    background: "rgba(26, 37, 47, 0.9)",
-    padding: "30px",
-    borderRadius: "15px",
-    boxShadow: "0 10px 30px rgba(0,0,0,0.3)",
-    backdropFilter: "blur(10px)",
-  },
-  formTitle: {
-    textAlign: "center",
-    marginBottom: "30px",
-    color: "#3498db",
-    fontSize: "2rem",
-    fontWeight: "600",
-  },
-  form: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "20px",
-  },
-  inputWrapper: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "20px",
-  },
-  input: {
-    padding: "15px",
-    backgroundColor: "rgba(52, 73, 94, 0.7)",
-    border: "2px solid #34495e",
-    borderRadius: "10px",
-    fontSize: "16px",
-    color: "#e0e0e0",
-    transition: "all 0.3s ease",
-    "&:focus": {
-      borderColor: "#3498db",
-      boxShadow: "0 0 0 2px rgba(52,152,219,0.2)",
-      outline: "none",
-    },
-  },
-  textarea: {
-    minHeight: "150px",
-    resize: "vertical",
-  },
-  button: {
-    backgroundColor: "#3498db",
-    color: "#fff",
-    padding: "15px 30px",
-    border: "none",
-    borderRadius: "10px",
-    cursor: "pointer",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontSize: "18px",
-    fontWeight: "600",
-    transition: "all 0.3s ease",
-    "&:hover": {
-      backgroundColor: "#2980b9",
-      transform: "translateY(-2px)",
-      boxShadow: "0 5px 15px rgba(52,152,219,0.3)",
-    },
-    "&:disabled": {
-      opacity: "0.6",
-      cursor: "not-allowed",
-    },
-  },
-  "@media (min-width: 768px)": {
-    inputWrapper: {
-      flexDirection: "row",
-    },
-  },
-};
 export default Contact;
