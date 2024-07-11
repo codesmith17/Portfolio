@@ -285,7 +285,7 @@ const Article1 = () => {
               </div>
 
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Web development</h4>
+                <h4 className="h4 service-item-title">Full stack developer</h4>
 
                 <p className="service-item-text">
                   High-quality development of sites at the professional level. A
@@ -311,6 +311,15 @@ const Article1 = () => {
                     src={express}
                     alt="express GIF"
                   />
+                  {/* <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={express"}
+                    alt="express GIF"
+                  /> */}
                   <img
                     style={{
                       flex: "0 0 auto",
@@ -387,8 +396,8 @@ const Article1 = () => {
                 >
                   With super keen interest in data structures and algorithms and
                   having been actively participating in LeetCode for the past
-                  1.5 years, my current LeetCode rating is 2004 with a Knight
-                  ranking.
+                  1.5 years, my current LeetCode rating is 1994 (max rating
+                  2094) with a Knight ranking.
                 </p>{" "}
                 <div
                   className="slider-container"
@@ -445,6 +454,83 @@ const Article1 = () => {
                     src={fifty}
                     alt="fifty GIF"
                   />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={
+                      "https://assets.leetcode.com/static_assets/marketing/2024-50.gif"
+                    }
+                    alt="fifty GIF"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={
+                      "https://leetcode.com/static/images/badges/2024/gif/2024-06.gif"
+                    }
+                    alt="fifty GIF"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={
+                      "https://leetcode.com/static/images/badges/2024/gif/2024-05.gif"
+                    }
+                    alt="fifty GIF"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={
+                      "https://leetcode.com/static/images/badges/2024/gif/2024-04.gif"
+                    }
+                    alt="fifty GIF"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={
+                      "https://leetcode.com/static/images/badges/2024/gif/2024-03.gif"
+                    }
+                    alt="fifty GIF"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={
+                      "https://leetcode.com/static/images/badges/2024/gif/2024-02.gif"
+                    }
+                    alt="fifty GIF"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={
+                      "https://leetcode.com/static/images/badges/2024/gif/2024-01.gif"
+                    }
+                    alt="fifty GIF"
+                  />
                 </div>
               </div>
             </li>
@@ -454,15 +540,15 @@ const Article1 = () => {
               </div>
 
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Leetcode</h4>
+                <h4 className="h4 service-item-title">Python Development</h4>
                 <p
                   className="service-item-text"
                   style={{ fontSize: "13px", lineHeight: "1.5" }}
                 >
-                  With almost one year of experience in PHP and database
-                  programming, struggling throught mistakes and lot of work
-                  hours spent here, hence made couple of minor and some major
-                  PHP,MYSQL projects.
+                  With almost one year of experience in Python and web scraping,
+                  struggling through mistakes and spending a lot of work hours
+                  here, I've completed a couple of minor and some major Django
+                  and Scrapy projects.
                 </p>
               </div>
             </li>
