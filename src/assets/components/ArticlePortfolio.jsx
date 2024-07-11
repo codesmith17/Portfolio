@@ -208,7 +208,27 @@ const ArticlePortfolio = () => {
             data-category="web development"
           >
             <a
-              href="https://advanced-todo-list-six.vercel.app/"
+              href="https://agnihotra-eternal-agni.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FaRegEye />
+                </div>
+                <img src={todo} alt="Advanced Todo List" loading="lazy" />
+              </figure>
+              <h3 className="project-title">Agnihotra Timing Website</h3>
+              <p className="project-category">Web development</p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="web development"
+          >
+            <a
+              href="https://github.com/codesmith17/ADVANCED-TODO-LIST"
               target="_blank"
               rel="noopener noreferrer"
             >
