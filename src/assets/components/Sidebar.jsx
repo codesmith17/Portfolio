@@ -1,6 +1,10 @@
 import React from "react";
 import { CiMail } from "react-icons/ci";
-import { IoPhonePortraitOutline, IoCalendarOutline } from "react-icons/io5";
+import {
+  IoPhonePortraitOutline,
+  IoCalendarOutline,
+  IoDocumentText,
+} from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
 import myAvatarImage from "../../assets/images/my-avatar.png";
@@ -9,6 +13,8 @@ import { FaInstagram } from "react-icons/fa";
 import { SiLetterboxd } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 const Sidebar = () => {
+  const resumeLink =
+    "https://drive.google.com/file/d/1nsZ3AZL6AAIDlm9uPim-FQPX-FChz7Em/view?usp=drive_link";
   return (
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
@@ -46,6 +52,16 @@ const Sidebar = () => {
         <div class="separator"></div>
 
         <ul class="contacts-list">
+          <li class="contact-item">
+            <a
+              href={resumeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-button"
+            >
+              <IoDocumentText /> View Full Resume
+            </a>
+          </li>
           <li class="contact-item">
             <div class="icon-box">
               <CiMail />

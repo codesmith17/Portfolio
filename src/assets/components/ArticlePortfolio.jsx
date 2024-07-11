@@ -142,7 +142,27 @@ const ArticlePortfolio = () => {
               <p class="project-category">Web development</p>
             </a>
           </li>
+          <li
+            class="project-item  active"
+            data-filter-item
+            data-category="web development"
+          >
+            <a href="https://www.givehopef.org/" target="_blank">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <FaRegEye />
+                </div>
 
+                <img src={givehope} alt="orizon" loading="lazy" />
+              </figure>
+
+              <h3 class="project-title">
+                A website for a NGO namely GiveHope foundation
+              </h3>
+
+              <p class="project-category">Web development</p>
+            </a>
+          </li>
           <li
             class="project-item  active"
             data-filter-item
