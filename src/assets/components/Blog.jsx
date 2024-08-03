@@ -10,7 +10,7 @@ const Blog = () => {
 
         <section className="letterboxd-section">
           <a
-            href="https://letterboxd.com/your-username"
+            href="https://letterboxd.com/krishna17"
             target="_blank"
             rel="noopener noreferrer"
             className="letterboxd-link"
