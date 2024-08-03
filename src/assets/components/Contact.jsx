@@ -24,9 +24,10 @@ const Contact = () => {
     // Instantiate the Brevo API client
     var defaultClient = SibApiV3Sdk.ApiClient.instance;
     var apiKey = defaultClient.authentications["api-key"];
-    // console.log(import.meta;
+    console.log(import.meta);
     apiKey.apiKey = import.meta.env.VITE_REACT_APP_BREVO_API_KEY;
 
+    console.log(apiKey);
     var apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
     var sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
 
