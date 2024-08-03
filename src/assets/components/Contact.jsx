@@ -25,7 +25,7 @@ const Contact = () => {
     var defaultClient = SibApiV3Sdk.ApiClient.instance;
     var apiKey = defaultClient.authentications["api-key"];
     // console.log(import.meta;
-    apiKey.apiKey = import.meta.env.REACT_APP_BREVO_API_KEY;
+    apiKey.apiKey = import.meta.env.VITE_REACT_APP_BREVO_API_KEY;
 
     var apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
     var sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
