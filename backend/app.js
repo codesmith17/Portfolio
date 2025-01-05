@@ -1,24 +1,37 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
-const bodyParser = require("body-parser");
 const cors = require("cors");
+const bodyParser = require("body-parser");
 require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+// Configure CORS options
+const corsOptions = {
+  origin: ["http://localhost:5173", "https://krishna-tripathi.vercel.app/"], // Add allowed origins
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"],
+};
+
+// Apply CORS middleware
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 // Nodemailer transporter
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_SERVICE,
   port: process.env.EMAIL_PORT,
-  secure: true,
+  secure: process.env.EMAIL_PORT == "465", // true for port 465, false otherwise
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASSWORD,
   },
+});
+
+// Preflight request handling (optional but recommended)
+app.options("/send-email", (req, res) => {
+  res.sendStatus(200);
 });
 
 // Email endpoint
@@ -67,6 +80,7 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
+// Start the server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
