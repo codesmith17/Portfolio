@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 // Configure CORS options
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://krishna-tripathi.vercel.app/"], // Add allowed origins
+  origin: ["http://localhost:5173", "https://krishna-tripathi.vercel.app"], // Add allowed origins
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
 };
