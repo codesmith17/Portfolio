@@ -14,7 +14,7 @@ const corsOptions = {
   allowedHeaders: ["Content-Type"],
 };
 
-// Apply CORS middleware
+// Apply CORS middleware globally
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
@@ -30,9 +30,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Preflight request handling (optional but recommended)
-app.options("/send-email", (req, res) => {
-  res.sendStatus(200);
-});
+app.options("*", cors(corsOptions)); // Allow all endpoints to handle OPTIONS request
 
 // Email endpoint
 app.post("/send-email", async (req, res) => {
