@@ -1,18 +1,18 @@
 import React, { useEffect } from "react";
-import todo from "../../assets/images/todo-project.jpg";
-import agnihotra from "../../assets/images/agnihotra.png";
-import givehope from "../../assets/images/givehope.png";
-import instyle from "../../assets/images/instyle-int.png";
-import codeforces from "../../assets/images/codeforces.png.png";
+import todo from "../images/todo-project.jpg";
+import agnihotra from "../images/agnihotra.png";
+import givehope from "../images/givehope.png";
+import instyle from "../images/instyle-int.png";
+import codeforces from "../images/codeforces.png.png";
 import { FaRegEye } from "react-icons/fa";
-import codechef from "../../assets/images/codechef.jpg";
-import leetcode from "../../assets/images/leetcode.png";
-import piano from "../../assets/images/piano.jpg";
-import errorlogs from "../../assets/images/errorlogs.png";
-import railmaarg from "../../assets/images/railmaarg.jpg";
-import moviereview from "../../assets/images/movie_review.png";
-import booksearch from "../../assets/images/booksearch.png";
-import blog from "../../assets/images/blog.png";
+import codechef from "../images/codechef.jpg";
+import leetcode from "../images/leetcode.png";
+import piano from "../images/piano.jpg";
+import errorlogs from "../images/errorlogs.png";
+import railmaarg from "../images/railmaarg.jpg";
+import moviereview from "../images/movie_review.png";
+import booksearch from "../images/booksearch.png";
+import blog from "../images/blog.png";
 
 const ArticlePortfolio = () => {
   useEffect(() => {

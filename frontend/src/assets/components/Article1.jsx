@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from "react";
-import webDev from "../../assets/images/icon-dev.svg";
+import webDev from "../images/icon-dev.svg";
 import { IoCloseOutline } from "react-icons/io5";
 import { FaWindowClose } from "react-icons/fa";
-import aditya from "../../assets/images/aditya.png";
-import leet from "../../assets/images/leetcode.svg";
-import knight from "../../assets/images/Knight.gif";
-import dec from "../../assets/images/2023-11.gif";
-import nov from "../../assets/images/2023-12.gif";
-import hundred from "../../assets/images/hundred.gif";
-import fifty from "../../assets/images/fifty.gif";
-import html from "../../assets/images/html-5.svg";
-import js from "../../assets/images/js.svg";
-import css from "../../assets/images/css.svg";
-import mongodb from "../../assets/images/mongodb.svg";
-import mysql from "../../assets/images/mysql (2).svg";
-import react from "../../assets/images/react.svg";
-import express from "../../assets/images/express (2).svg";
-import java from "../../assets/images/java-icon.svg";
-import php from "../../assets/images/php.svg";
-import ayush from "../../assets/images/ayush_kushwaha.png";
-import instyle from "../../assets/images/instyle.png";
-import give_hope from "../../assets/images/give_hope.png";
-import rashmi from "../../assets/images/rashmi.png";
+import aditya from "../images/aditya.png";
+import leet from "../images/leetcode.svg";
+import knight from "../images/Knight.gif";
+import dec from "../images/2023-11.gif";
+import nov from "../images/2023-12.gif";
+import hundred from "../images/hundred.gif";
+import fifty from "../images/fifty.gif";
+import html from "../images/html-5.svg";
+import js from "../images/js.svg";
+import css from "../images/css.svg";
+import mongodb from "../images/mongodb.svg";
+import mysql from "../images/mysql (2).svg";
+import react from "../images/react.svg";
+import express from "../images/express (2).svg";
+import java from "../images/java-icon.svg";
+import php from "../images/php.svg";
+import ayush from "../images/ayush_kushwaha.png";
+import instyle from "../images/instyle.png";
+import give_hope from "../images/give_hope.png";
+import rashmi from "../images/rashmi.png";
 const Article1 = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -454,83 +454,7 @@ const Article1 = () => {
                     src={fifty}
                     alt="fifty GIF"
                   />
-                  <img
-                    style={{
-                      flex: "0 0 auto",
-                      width: "24%",
-                      margin: "10px",
-                    }}
-                    src={
-                      "https://assets.leetcode.com/static_assets/marketing/2024-50.gif"
-                    }
-                    alt="fifty GIF"
-                  />
-                  <img
-                    style={{
-                      flex: "0 0 auto",
-                      width: "24%",
-                      margin: "10px",
-                    }}
-                    src={
-                      "https://leetcode.com/static/images/badges/2024/gif/2024-06.gif"
-                    }
-                    alt="fifty GIF"
-                  />
-                  <img
-                    style={{
-                      flex: "0 0 auto",
-                      width: "24%",
-                      margin: "10px",
-                    }}
-                    src={
-                      "https://leetcode.com/static/images/badges/2024/gif/2024-05.gif"
-                    }
-                    alt="fifty GIF"
-                  />
-                  <img
-                    style={{
-                      flex: "0 0 auto",
-                      width: "24%",
-                      margin: "10px",
-                    }}
-                    src={
-                      "https://leetcode.com/static/images/badges/2024/gif/2024-04.gif"
-                    }
-                    alt="fifty GIF"
-                  />
-                  <img
-                    style={{
-                      flex: "0 0 auto",
-                      width: "24%",
-                      margin: "10px",
-                    }}
-                    src={
-                      "https://leetcode.com/static/images/badges/2024/gif/2024-03.gif"
-                    }
-                    alt="fifty GIF"
-                  />
-                  <img
-                    style={{
-                      flex: "0 0 auto",
-                      width: "24%",
-                      margin: "10px",
-                    }}
-                    src={
-                      "https://leetcode.com/static/images/badges/2024/gif/2024-02.gif"
-                    }
-                    alt="fifty GIF"
-                  />
-                  <img
-                    style={{
-                      flex: "0 0 auto",
-                      width: "24%",
-                      margin: "10px",
-                    }}
-                    src={
-                      "https://leetcode.com/static/images/badges/2024/gif/2024-01.gif"
-                    }
-                    alt="fifty GIF"
-                  />
+             
                 </div>
               </div>
             </li>

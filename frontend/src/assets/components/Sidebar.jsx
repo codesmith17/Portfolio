@@ -7,7 +7,7 @@ import {
 } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
-import myAvatarImage from "../../assets/images/my-avatar.png";
+import myAvatarImage from "../images/my-avatar.png";
 import { FaWhatsapp } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { SiLetterboxd } from "react-icons/si";
