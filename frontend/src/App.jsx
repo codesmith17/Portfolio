@@ -9,6 +9,8 @@ const App = () => {
       {/* <Helmet>
         <script src="../script.js" type="text/javascript" />
       </Helmet> */}
+
+      
       <Sidebar></Sidebar>
       <MainContent></MainContent>
     </main>
