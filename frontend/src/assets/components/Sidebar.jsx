@@ -14,7 +14,7 @@ import { SiLetterboxd } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 const Sidebar = () => {
   const resumeLink =
-    "https://github.com/codesmith17/resume/raw/main/resume.pdf";
+    "https://codesmith17.github.io/resume/";
   return (
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
