@@ -523,6 +523,7 @@ const Article1 = () => {
                       style={{ width: "48px", height: "48px" }}
                       src={leetcodeBadge}
                       alt="LeetCode badge"
+                      title="LeetCode — Guardian, rating 2138 (max 2145), 918 problems solved"
                     />
                   </a>
                   <a
@@ -535,6 +536,7 @@ const Article1 = () => {
                       style={{ width: "48px", height: "48px" }}
                       src={codechefBadge}
                       alt="CodeChef badge"
+                      title="CodeChef — 4-star, rating 1944"
                     />
                   </a>
                   <a
@@ -547,6 +549,7 @@ const Article1 = () => {
                       style={{ width: "48px", height: "48px" }}
                       src={codeforcesBadge}
                       alt="Codeforces badge"
+                      title="Codeforces — Specialist, rating 1461 (max 1484)"
                     />
                   </a>
                 </div>
@@ -567,6 +570,7 @@ const Article1 = () => {
                     }}
                     src={knight}
                     alt="knight pic"
+                    title="LeetCode Knight Badge"
                   />
 
                   <img
@@ -577,6 +581,7 @@ const Article1 = () => {
                     }}
                     src={dec}
                     alt="dec pic"
+                    title="LeetCode December 2023 Contest Badge"
                   />
                   <img
                     style={{
@@ -586,6 +591,7 @@ const Article1 = () => {
                     }}
                     src={nov}
                     alt="nov GIF"
+                    title="LeetCode November 2023 Contest Badge"
                   />
                   <img
                     style={{
@@ -595,6 +601,7 @@ const Article1 = () => {
                     }}
                     src={hundred}
                     alt="hundred GIF"
+                    title="LeetCode 100 Days Badge"
                   />
                   <img
                     style={{
@@ -604,6 +611,7 @@ const Article1 = () => {
                     }}
                     src={fifty}
                     alt="fifty GIF"
+                    title="LeetCode 50 Days Badge"
                   />
              
                 </div>

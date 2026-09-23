@@ -1,4 +1,5 @@
 import React from "react";
+import jimCarreyFeatured from "../images/jim-carrey-featured.jpg";
 
 const Blog = () => {
   return (
@@ -32,8 +33,8 @@ const Blog = () => {
 
         <section className="featured-image-section">
           <img
-            src="https://lwlies.com/wp-content/uploads/2018/05/truman.jpg"
-            alt="The Truman Show"
+            src={jimCarreyFeatured}
+            alt="Jim Carrey looking at the sky"
             className="featured-image"
           />
         </section>

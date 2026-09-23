@@ -147,6 +147,60 @@ const ArticlePortfolio = () => {
                 LangGraph, FastAPI, Next.js, MCP, Docker, YugabyteDB, RAG
               </p>
             </a>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "8px",
+                marginTop: "10px",
+              }}
+            >
+              <a
+                href="https://drive.google.com/file/d/1FeDoy3duOXkC9bDFbx8XYkm08n5Khysf/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontSize: "12px",
+                  padding: "4px 10px",
+                  border: "1px solid var(--border-gradient-onyx, #444)",
+                  borderRadius: "12px",
+                  color: "var(--orange-yellow-crayola, #ffb54a)",
+                  textDecoration: "none",
+                }}
+              >
+                🎬 Demo Video
+              </a>
+              <a
+                href="https://peach-doreen-11.tiiny.site/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontSize: "12px",
+                  padding: "4px 10px",
+                  border: "1px solid var(--border-gradient-onyx, #444)",
+                  borderRadius: "12px",
+                  color: "var(--orange-yellow-crayola, #ffb54a)",
+                  textDecoration: "none",
+                }}
+              >
+                🖥️ Live Demo
+              </a>
+              <a
+                href="https://hub.docker.com/u/krishnatripathi17?page=1&search=yb-voyager-"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontSize: "12px",
+                  padding: "4px 10px",
+                  border: "1px solid var(--border-gradient-onyx, #444)",
+                  borderRadius: "12px",
+                  color: "var(--orange-yellow-crayola, #ffb54a)",
+                  textDecoration: "none",
+                }}
+              >
+                🐳 DockerHub
+              </a>
+            </div>
           </li>
           <li
             className="project-item active"

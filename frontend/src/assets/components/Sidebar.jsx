@@ -114,7 +114,7 @@ const Sidebar = () => {
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Nagpur, Maharashtra, India </address>
+              <address>Bengaluru, Karnataka, India </address>
             </div>
           </li>
         </ul>
