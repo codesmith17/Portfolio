@@ -14,7 +14,7 @@ import { SiLetterboxd } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 const Sidebar = () => {
   const resumeLink =
-    "https://drive.google.com/file/d/1nsZ3AZL6AAIDlm9uPim-FQPX-FChz7Em/view?usp=drive_link";
+    "https://github.com/codesmith17/resume/raw/main/resume.pdf";
   return (
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
@@ -27,7 +27,7 @@ const Sidebar = () => {
             Krishna Tripathi
           </h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Software Engineer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -153,6 +153,7 @@ const Sidebar = () => {
             <a
               href="https://github.com/codesmith17"
               target="_blank"
+              title="GitHub (Personal)"
               class="social-link"
             >
               <FaGithub />
@@ -160,7 +161,17 @@ const Sidebar = () => {
           </li>
           <li class="social-item">
             <a
-              href="https://www.linkedin.com/in/krishna-tripathi-483477255/"
+              href="https://github.com/krishna-yb"
+              target="_blank"
+              title="GitHub (Work — Yugabyte)"
+              class="social-link"
+            >
+              <FaGithub />
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              href="https://www.linkedin.com/in/krishnatripathi-/"
               target="_blank"
               class="social-link"
             >

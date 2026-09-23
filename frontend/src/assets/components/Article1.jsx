@@ -22,6 +22,19 @@ import ayush from "../images/ayush_kushwaha.png";
 import instyle from "../images/instyle.png";
 import give_hope from "../images/give_hope.png";
 import rashmi from "../images/rashmi.png";
+import goLogo from "../images/go.svg";
+import nextjsLogo from "../images/nextjs.svg";
+import fastapiLogo from "../images/fastapi.svg";
+import dockerLogo from "../images/docker.svg";
+import awsLogo from "../images/aws.svg";
+import gcpLogo from "../images/gcp.svg";
+import postgresqlLogo from "../images/postgresql.svg";
+import langchainLogo from "../images/langchain.svg";
+import typescriptLogo from "../images/typescript.svg";
+import githubActionsLogo from "../images/githubactions.svg";
+import leetcodeBadge from "../images/leetcode-badge.svg";
+import codechefBadge from "../images/codechef-badge.svg";
+import codeforcesBadge from "../images/codeforces-badge.svg";
 const Article1 = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -238,10 +251,11 @@ const Article1 = () => {
 
         <section className="about-text ">
           <p>
-            I'm Krishna Tripathi from Indian Institute of Information Technology
-            Nagpur, a PreFinal (3rd year) with great interest in web development
-            . I enjoy turning complex problems into simple, beautiful and
-            intuitive designs.
+            I'm Krishna Tripathi, a Software Engineer I at Yugabyte and a
+            graduate of the Indian Institute of Information Technology Nagpur,
+            with a strong interest in backend systems, distributed databases,
+            and applied AI/LLM engineering. I enjoy turning complex problems
+            into simple, beautiful and intuitive designs.
           </p>
 
           <p>
@@ -288,8 +302,9 @@ const Article1 = () => {
                 <h4 className="h4 service-item-title">Full stack developer</h4>
 
                 <p className="service-item-text">
-                  High-quality development of sites at the professional level. A
-                  Professional MERN stack developer, with expertise in React.js.
+                  Professional full-stack and backend engineer, currently building
+                  distributed systems and AI/LLM features at Yugabyte with Go, React,
+                  Python, and YugabyteDB.
                 </p>
                 <div
                   className="slider-container"
@@ -374,6 +389,96 @@ const Article1 = () => {
                     src={mongodb}
                     alt="mongodb GIF"
                   />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={goLogo}
+                    alt="Go logo"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={nextjsLogo}
+                    alt="Next.js logo"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={fastapiLogo}
+                    alt="FastAPI logo"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={typescriptLogo}
+                    alt="TypeScript logo"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={postgresqlLogo}
+                    alt="PostgreSQL logo"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={langchainLogo}
+                    alt="LangChain logo"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={dockerLogo}
+                    alt="Docker logo"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={awsLogo}
+                    alt="AWS logo"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={gcpLogo}
+                    alt="Google Cloud logo"
+                  />
+                  <img
+                    style={{
+                      flex: "0 0 auto",
+                      width: "24%",
+                      margin: "10px",
+                    }}
+                    src={githubActionsLogo}
+                    alt="GitHub Actions logo"
+                  />
                 </div>
               </div>
             </li>
@@ -382,23 +487,69 @@ const Article1 = () => {
               <div className="service-icon-box">
                 <a
                   target="_blank"
-                  href="https://www.leetcode.com/krishna170902"
+                  href="https://leetcode.com/u/codesmith17/"
                 >
                   <img src={leet} alt="leetcode icon" width="40" />
                 </a>
               </div>
 
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">Leetcode</h4>
+                <h4 className="h4 service-item-title">Competitive Programming</h4>
                 <p
                   className="service-item-text"
                   style={{ fontSize: "13px", lineHeight: "1.5" }}
                 >
-                  With super keen interest in data structures and algorithms and
-                  having been actively participating in LeetCode for the past
-                  1.5 years, my current LeetCode rating is 1994 (max rating
-                  2094) with a Knight ranking.
-                </p>{" "}
+                  918 problems solved on LeetCode (Guardian, rating 2138, max
+                  2145, top 1.3% globally), 4-star on CodeChef (rating 1944),
+                  and Specialist on Codeforces (rating 1461, max 1484).
+                </p>
+                <div
+                  className="slider-container"
+                  style={{
+                    overflowX: "auto",
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    maxWidth: "100%",
+                  }}
+                >
+                  <a
+                    href="https://leetcode.com/u/codesmith17/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ flex: "0 0 auto", margin: "10px" }}
+                  >
+                    <img
+                      style={{ width: "48px", height: "48px" }}
+                      src={leetcodeBadge}
+                      alt="LeetCode badge"
+                    />
+                  </a>
+                  <a
+                    href="https://www.codechef.com/users/krishna1727"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ flex: "0 0 auto", margin: "10px" }}
+                  >
+                    <img
+                      style={{ width: "48px", height: "48px" }}
+                      src={codechefBadge}
+                      alt="CodeChef badge"
+                    />
+                  </a>
+                  <a
+                    href="https://codeforces.com/profile/ukKrishna27081709"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ flex: "0 0 auto", margin: "10px" }}
+                  >
+                    <img
+                      style={{ width: "48px", height: "48px" }}
+                      src={codeforcesBadge}
+                      alt="Codeforces badge"
+                    />
+                  </a>
+                </div>
                 <div
                   className="slider-container"
                   style={{

@@ -13,6 +13,10 @@ import railmaarg from "../images/railmaarg.jpg";
 import moviereview from "../images/movie_review.png";
 import booksearch from "../images/booksearch.png";
 import blog from "../images/blog.png";
+import yugabyteLogo from "../images/yugabyte-logo.png";
+import leetcodeBadge from "../images/leetcode-badge.svg";
+import perpetualCalendarScreenshot from "../images/perpetual-calendar-screenshot.png";
+import perpetualCalendarDemo from "../images/perpetual-calendar-demo.mp4";
 
 const ArticlePortfolio = () => {
   useEffect(() => {
@@ -74,6 +78,9 @@ const ArticlePortfolio = () => {
             </button>
           </li>
           <li className="filter-item">
+            <button data-filter-btn>AI/LLM Projects</button>
+          </li>
+          <li className="filter-item">
             <button data-filter-btn>PHP</button>
           </li>
           <li className="filter-item">
@@ -99,6 +106,9 @@ const ArticlePortfolio = () => {
               <button data-select-item>All</button>
             </li>
             <li className="select-item">
+              <button data-select-item>AI/LLM Projects</button>
+            </li>
+            <li className="select-item">
               <button data-select-item>PHP</button>
             </li>
             <li className="select-item">
@@ -117,6 +127,56 @@ const ArticlePortfolio = () => {
           <li
             className="project-item active"
             data-filter-item
+            data-category="ai/llm projects"
+          >
+            <a
+              href="https://github.com/yugabyte/langchain-yugabytedb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FaRegEye />
+                </div>
+                <img src={yugabyteLogo} alt="YB Voyager Copilot" loading="lazy" />
+              </figure>
+              <h3 className="project-title">
+                YB Voyager Copilot: AI-Powered Database Migration Assistant
+              </h3>
+              <p className="project-category">
+                LangGraph, FastAPI, Next.js, MCP, Docker, YugabyteDB, RAG
+              </p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="ai/llm projects"
+          >
+            <a
+              href="https://github.com/codesmith17/AGNIHOTRA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FaRegEye />
+                </div>
+                <img src={agnihotra} alt="EternalAgni" loading="lazy" />
+              </figure>
+              <h3 className="project-title">
+                EternalAgni: Precision Agnihotra Timing App (Android + PWA)
+              </h3>
+              <p className="project-category">
+                Seconds-precision sunrise/sunset timing with GPS/IP location detection,
+                offline-ready fallback APIs, and native Android builds via Capacitor.
+                JavaScript, Capacitor, Android, PWA, Service Workers
+              </p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
             data-category="web development"
           >
             <a
@@ -128,12 +188,92 @@ const ArticlePortfolio = () => {
                 <div className="project-item-icon-box">
                   <FaRegEye />
                 </div>
-                <img src={moviereview} alt="Movie Review App" loading="lazy" />
+                <img src={moviereview} alt="CineSphere Movie Review App" loading="lazy" />
               </figure>
               <h3 className="project-title">
-                FULLY FUNCTIONAL MOVIE REVIEW APP WITH ADDING FRIENDS FEATURE
+                CineSphere: Full-Stack Social Movie &amp; TV Review Platform
               </h3>
-              <p className="project-category">Web development</p>
+              <p className="project-category">
+                React, Redux Toolkit, Node.js, Express, YugabyteDB, JWT Auth, TMDB API, Google Generative AI
+              </p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="competitive programming and dsa"
+          >
+            <a
+              href="https://github.com/codesmith17/LEETCODE-REMINDER"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <figure className="project-img">
+                <div className="project-item-icon-box">
+                  <FaRegEye />
+                </div>
+                <img src={leetcodeBadge} alt="LeetCode Reminder" loading="lazy" />
+              </figure>
+              <h3 className="project-title">
+                LeetCode Reminder: Automated POTD &amp; Contest Notifications
+              </h3>
+              <p className="project-category">
+                Node.js service using GitHub Actions cron and ntfy push notifications to
+                track daily problem status, contest reminders, and weekly rating changes.
+              </p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="applications"
+          >
+            <a
+              href="https://github.com/codesmith17/perpetual-calender"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <figure
+                className="project-img"
+                onMouseEnter={(e) => {
+                  const video = e.currentTarget.querySelector("video");
+                  if (video) video.play();
+                }}
+                onMouseLeave={(e) => {
+                  const video = e.currentTarget.querySelector("video");
+                  if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                  }
+                }}
+              >
+                <div className="project-item-icon-box">
+                  <FaRegEye />
+                </div>
+                <img
+                  src={perpetualCalendarScreenshot}
+                  alt="Perpetual Calendar Puzzle Solver"
+                  loading="lazy"
+                  style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+                />
+                <video
+                  src={perpetualCalendarDemo}
+                  muted
+                  loop
+                  playsInline
+                  preload="none"
+                  style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+                  onMouseLeave={(e) => e.currentTarget.pause()}
+                />
+              </figure>
+              <h3 className="project-title">
+                Perpetual Calendar Puzzle Solver
+              </h3>
+              <p className="project-category">
+                A Go/WASM-powered solver for the daily calendar puzzle: pre-computes
+                all valid arrangements of 8 pieces for any date and lets you browse
+                every solution. Hover to see it in action.
+              </p>
             </a>
           </li>
           <li
