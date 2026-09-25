@@ -33,6 +33,7 @@ const Navbar = () => {
             Contact
           </button>
         </li>
+
       </ul>
     </nav>
   );
