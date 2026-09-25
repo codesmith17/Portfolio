@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/internal-testing",
+      "destination": "/"
+    }
+  ]
+}
