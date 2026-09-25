@@ -2426,10 +2426,28 @@ canvas {
 
   .navbar-list {
     padding: 0 6px;
+    width: 100%;
+    justify-content: space-around;
   }
 
   .navbar-link {
+    width: 100%;
     padding: 18px 8px;
+    text-align: center;
     white-space: nowrap;
+  }
+
+  .navbar {
+    left: 0;
+    right: 0;
+    width: 100vw;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .navbar-item {
+    flex: 1 1 0;
+    min-width: 0;
   }
 }
