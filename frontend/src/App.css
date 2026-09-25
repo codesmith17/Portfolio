@@ -2157,6 +2157,30 @@ textarea.form-input::-webkit-resizer {
   margin-bottom: 26px;
 }
 
+.testing-flow {
+  display: grid;
+  gap: 26px;
+  margin-inline: auto;
+  max-width: 100%;
+}
+
+.testing-flow-step {
+  border-top: 1px solid var(--jet);
+  display: grid;
+  gap: 14px;
+  padding-top: 24px;
+}
+
+.testing-flow .testing-action {
+  width: fit-content;
+}
+
+.testing-step-heading {
+  align-items: flex-start;
+  display: flex;
+  gap: 14px;
+}
+
 .testing-step {
   align-items: flex-start;
   display: flex;
@@ -2190,6 +2214,36 @@ textarea.form-input::-webkit-resizer {
 .testing-actions {
   display: grid;
   gap: 10px;
+}
+
+.testing-guide-image {
+  border: 1px solid var(--jet);
+  border-radius: 10px;
+  display: block;
+  margin-top: 22px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.testing-guide-stack {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.testing-guide-figure {
+  margin: 0;
+}
+
+.testing-guide-figure .testing-guide-image {
+  margin-top: 0;
+}
+
+.testing-guide-figure figcaption {
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  line-height: 1.4;
+  margin-top: 8px;
 }
 
 .testing-action.secondary {

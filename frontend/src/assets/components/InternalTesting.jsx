@@ -1,5 +1,9 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { FaArrowRight, FaGoogle } from "react-icons/fa";
+import becomeTesterGuideImage from "../images/eternal-agni-become-tester-guide.png";
+import confirmJoinGroupGuideImage from "../images/eternal-agni-confirm-join-group-guide.png";
+import groupGuideImage from "../images/eternal-agni-join-group-guide.png";
+import testerConfirmationGuideImage from "../images/eternal-agni-tester-confirmation-guide.png";
 
 const InternalTesting = () => {
   const [language, setLanguage] = useState(() => {
@@ -31,11 +35,18 @@ const InternalTesting = () => {
       accountTitle: "Step 1: Join the Google Group",
       accountCopy: "This step is required. Sign in with the same Google account you use on the Play Store and join the Eternal Agni Beta Testers group. The Play testing link will not work for you until you join the group.",
       joinGroup: "Join the group first",
-      stepsTitle: "Complete testing access",
-      stepOneTitle: "Join the group first (required)",
-      stepOneCopy: "Use your Play Store Google account and join the Eternal Agni Beta Testers group.",
-      stepTwoTitle: "Opt in through Google Play",
-      stepTwoCopy: "After joining the group, open the testing page and accept the invitation.",
+      stepsTitle: "Follow these 3 steps",
+      stepOneTitle: "Sign in",
+      stepOneCopy: "Use the Google account you use for Google Play.",
+      stepTwoTitle: "Join the group",
+      stepTwoCopy: "Tap Join group. You must join before continuing.",
+      stepTwoGuide: "Tap Become a tester",
+      confirmGroup: "Tap Join group to confirm",
+      stepThreeTitle: "Become a tester",
+      stepThreeCopy: "Open the Play link and tap Become a tester.",
+      stepThreeGuide: "Look for the tester confirmation",
+      stepFourTitle: "Install the app",
+      stepFourCopy: "When you see You are a tester, install Eternal Agni.",
       playLink: "Step 2: Open Play testing",
     },
     hi: {
@@ -46,11 +57,18 @@ const InternalTesting = () => {
       accountTitle: "चरण 1: Google समूह से जुड़ें",
       accountCopy: "यह चरण आवश्यक है। Google Play पर इस्तेमाल किए जाने वाले उसी Google खाते से Eternal Agni Beta Testers समूह से जुड़ें। समूह से जुड़ने तक Play परीक्षण लिंक आपके लिए काम नहीं करेगा।",
       joinGroup: "पहले समूह से जुड़ें",
-      stepsTitle: "परीक्षण की पहुँच पूरी करें",
-      stepOneTitle: "पहले समूह से जुड़ें (आवश्यक)",
-      stepOneCopy: "अपने Play Store वाले Google खाते से Eternal Agni Beta Testers समूह से जुड़ें।",
-      stepTwoTitle: "Google Play पर शामिल हों",
-      stepTwoCopy: "समूह से जुड़ने के बाद परीक्षण पृष्ठ खोलें और निमंत्रण स्वीकार करें।",
+      stepsTitle: "इन 3 चरणों का पालन करें",
+      stepOneTitle: "साइन इन करें",
+      stepOneCopy: "Google Play वाला Google खाता इस्तेमाल करें।",
+      stepTwoTitle: "समूह से जुड़ें",
+      stepTwoCopy: "Join group पर टैप करें। आगे बढ़ने के लिए जुड़ना आवश्यक है।",
+      stepTwoGuide: "Become a tester पर टैप करें",
+      confirmGroup: "पुष्टि करने के लिए Join group पर टैप करें",
+      stepThreeTitle: "टेस्टर बनें",
+      stepThreeCopy: "Play लिंक खोलें और Become a tester पर टैप करें।",
+      stepThreeGuide: "टेस्टर की पुष्टि देखें",
+      stepFourTitle: "ऐप इंस्टॉल करें",
+      stepFourCopy: "You are a tester दिखने पर Eternal Agni इंस्टॉल करें।",
       playLink: "चरण 2: Play परीक्षण खोलें",
     },
     mr: {
@@ -61,11 +79,18 @@ const InternalTesting = () => {
       accountTitle: "पायरी 1: Google गटात सामील व्हा",
       accountCopy: "ही पायरी आवश्यक आहे. Google Play वर वापरत असलेल्या त्याच Google खात्याने Eternal Agni Beta Testers गटात सामील व्हा. गटात सामील होईपर्यंत Play चाचणी लिंक तुमच्यासाठी काम करणार नाही.",
       joinGroup: "आधी गटात सामील व्हा",
-      stepsTitle: "चाचणीची प्रवेश प्रक्रिया पूर्ण करा",
-      stepOneTitle: "आधी गटात सामील व्हा (आवश्यक)",
-      stepOneCopy: "तुमच्या Play Store वरील Google खात्याने Eternal Agni Beta Testers गटात सामील व्हा.",
-      stepTwoTitle: "Google Play वर सहभागी व्हा",
-      stepTwoCopy: "गटात सामील झाल्यानंतर चाचणी पृष्ठ उघडा आणि आमंत्रण स्वीकारा.",
+      stepsTitle: "या 3 पायऱ्या पूर्ण करा",
+      stepOneTitle: "साइन इन करा",
+      stepOneCopy: "Google Play वर वापरत असलेले Google खाते वापरा.",
+      stepTwoTitle: "गटात सामील व्हा",
+      stepTwoCopy: "Join group वर टॅप करा. पुढे जाण्यासाठी सामील होणे आवश्यक आहे.",
+      stepTwoGuide: "Become a tester वर टॅप करा",
+      confirmGroup: "पुष्टी करण्यासाठी Join group वर टॅप करा",
+      stepThreeTitle: "टेस्टर बना",
+      stepThreeCopy: "Play लिंक उघडा आणि Become a tester वर टॅप करा.",
+      stepThreeGuide: "टेस्टरची पुष्टी पाहा",
+      stepFourTitle: "अॅप इंस्टॉल करा",
+      stepFourCopy: "You are a tester दिसल्यावर Eternal Agni इंस्टॉल करा.",
       playLink: "पायरी 2: Play चाचणी उघडा",
     },
   }[language];
@@ -105,44 +130,81 @@ const InternalTesting = () => {
         <h1 className="testing-heading">{copy.heading}</h1>
         <p className="testing-lede">{copy.lede}</p>
 
-        <div className="testing-grid">
-          <section className="testing-panel" aria-labelledby="request-access-title">
-            <h2 className="testing-panel-title" id="request-access-title">{copy.accountTitle}</h2>
-            <p className="testing-panel-copy">{copy.accountCopy}</p>
+        <section className="testing-panel testing-flow" aria-labelledby="next-steps-title">
+          <h2 className="testing-panel-title" id="next-steps-title">{copy.stepsTitle}</h2>
+
+          <div className="testing-flow-step">
+            <div className="testing-step-heading">
+              <span className="testing-step-number">1</span>
+              <div>
+                <h3 className="testing-step-title">{copy.stepTwoTitle}</h3>
+                <p className="testing-step-copy">{copy.stepTwoCopy}</p>
+              </div>
+            </div>
             <a className="testing-action" {...linkProps(config.groupUrl)}>
               <FaGoogle aria-hidden="true" />
               {copy.joinGroup}
               <FaArrowRight aria-hidden="true" />
             </a>
-          </section>
+            <div className="testing-guide-stack">
+              <figure className="testing-guide-figure">
+                <img
+                  className="testing-guide-image"
+                  src={groupGuideImage}
+                  alt="Google Groups page with an arrow pointing to the Join group button"
+                />
+              </figure>
+              <figure className="testing-guide-figure">
+                <img
+                  className="testing-guide-image"
+                  src={confirmJoinGroupGuideImage}
+                  alt="Google Groups join confirmation page with the Join group button"
+                />
+                <figcaption>{copy.confirmGroup}</figcaption>
+              </figure>
+            </div>
+          </div>
 
-          <section className="testing-panel" aria-labelledby="next-steps-title">
-            <h2 className="testing-panel-title" id="next-steps-title">{copy.stepsTitle}</h2>
-            <div className="testing-steps">
-              <div className="testing-step">
-                <span className="testing-step-number">1</span>
-                <div>
-                  <h3 className="testing-step-title">{copy.stepOneTitle}</h3>
-                  <p className="testing-step-copy">{copy.stepOneCopy}</p>
-                </div>
-              </div>
-              <div className="testing-step">
-                <span className="testing-step-number">2</span>
-                <div>
-                  <h3 className="testing-step-title">{copy.stepTwoTitle}</h3>
-                  <p className="testing-step-copy">{copy.stepTwoCopy}</p>
-                </div>
+          <div className="testing-flow-step">
+            <div className="testing-step-heading">
+              <span className="testing-step-number">2</span>
+              <div>
+                <h3 className="testing-step-title">{copy.stepThreeTitle}</h3>
+                <p className="testing-step-copy">{copy.stepThreeCopy}</p>
               </div>
             </div>
+            <a className="testing-action secondary" {...linkProps(config.playUrl)}>
+              <FaArrowRight aria-hidden="true" />
+              {copy.playLink}
+            </a>
+            <figure className="testing-guide-figure">
+              <img
+                className="testing-guide-image"
+                src={becomeTesterGuideImage}
+                alt="Google Play testing invitation with an arrow pointing to Become a tester"
+              />
+              <figcaption>{copy.stepTwoGuide}</figcaption>
+            </figure>
+          </div>
 
-            <div className="testing-actions">
-              <a className="testing-action secondary" {...linkProps(config.playUrl)}>
-                <FaArrowRight aria-hidden="true" />
-                {copy.playLink}
-              </a>
+          <div className="testing-flow-step">
+            <div className="testing-step-heading">
+              <span className="testing-step-number">3</span>
+              <div>
+                <h3 className="testing-step-title">{copy.stepFourTitle}</h3>
+                <p className="testing-step-copy">{copy.stepFourCopy}</p>
+              </div>
             </div>
-          </section>
-        </div>
+            <figure className="testing-guide-figure">
+              <img
+                className="testing-guide-image"
+                src={testerConfirmationGuideImage}
+                alt="Google Play testing page with an arrow pointing to the You are a tester confirmation"
+              />
+              <figcaption>{copy.stepThreeGuide}</figcaption>
+            </figure>
+          </div>
+        </section>
       </div>
     </main>
   );
