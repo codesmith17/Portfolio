@@ -2302,16 +2302,6 @@ article {
   max-width: 100%;
 }
 
-main {
-  width: calc(100% - 24px);
-}
-
-.main-content,
-.sidebar,
-article {
-  width: 100%;
-}
-
 article > *,
 article section,
 article header,
@@ -2383,6 +2373,16 @@ canvas {
 }
 
 @media (max-width: 480px) {
+  main {
+    width: calc(100% - 24px);
+  }
+
+  .main-content,
+  .sidebar,
+  article {
+    width: 100%;
+  }
+
   main {
     margin: 10px 8px 75px;
   }
